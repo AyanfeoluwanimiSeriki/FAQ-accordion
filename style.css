@@ -1,0 +1,151 @@
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.container{
+    width: 100%;
+    background-color: var(--Light-pink);
+    height: 100vh;
+    font-family: 'Work Sans';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.bg img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.bgb{
+    display: none;
+}
+.main{
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 10px;
+}
+.faq{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.faq img{
+    width: 30px;
+}
+.faq h2{
+    font-size: 35px;
+    color: var(--Dark-purple);
+}
+.what{
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+h5{
+    font-size: 15px;
+    color: var(--Grayish-purple);
+    font-weight: 400;
+    margin-bottom: 15px;
+    /* border-bottom: 1px solid var(--Grayish-purple); */
+}
+.what img{
+    width: 20px;
+}
+.faq-answer{
+    display: none;
+    font-size: 14px;
+    color: var(--Grayish-purple);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.faq-question:hover{
+    /* color: var(--Dark-purple); */
+    color: var(--Grayish-purple);
+    font-weight: 700;
+}
+.faq-question{
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: var(--Dark-purple);
+    font-weight: 600;
+    cursor: pointer;
+}
+.faq-item img{
+    width: 20px;
+    cursor: pointer;
+}
+.minus{
+    display: none;
+}
+hr{
+    /* size: 1; */
+    height: 1px;
+    border: none;
+    color: var(--Grayish-purple);
+    background-color: var(--Grayish-purple);
+    margin-bottom: 10px;
+}
+
+/* MOBILE DESIGN */
+
+@media(max-width:900px){
+    .container{
+        width: 100%;
+        background-color: var(--Light-pink);
+        /* height: 100%; */
+        font-family: 'Work Sans';
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bg{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        /* height: 100%; */
+        display: none;
+    }
+    .bgb{
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .bgb img{
+        width: 100%;
+    }
+    .main{
+        width: 85%;
+        position: absolute;
+        top: 20%;
+        background-color: var(--White);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+}
